@@ -1,71 +1,102 @@
     /* Global Styles */
     body {
-        background-color: #000000;
-        color: #ffffff;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      a {
-        color: #17a2b8;
-        text-decoration: none;
-      }
-      a:hover {
-        color: #0dcaf0;
-      }
-      .section-title {
-        border-bottom: 2px solid #444;
-        padding-bottom: 5px;
-        margin-bottom: 20px;
-      }
-      .contact-info i {
-        margin-right: 8px;
-      }
-      
-      /* Improved Education Timeline Styles */
-      .timeline {
-        position: relative;
-        margin: 2rem 0;
-      }
+      background-color: #000000;
+      color: #ffffff;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
 
-      /* Each timeline item as a flex container */
-      .timeline-item {
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 1rem; /* More compact spacing */
-      }
-      .timeline-icon {
-        width: 40px;
-        height: 40px;
-        background: #1e1e1e;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1rem;
-        color: #fff;
-        flex-shrink: 0;
-        margin-right: 1rem;
-      }
-      .timeline-content h5 {
-        margin-top: 0;
-        margin-bottom: 0.25rem;
-      }
-      .timeline-date {
-        font-size: 0.85rem;
-        color: #aaa;
-        margin-bottom: 0.5rem;
-        display: block;
-      }
-      .timeline-content p {
-        margin: 0;
-      }
-      
-      /* List styles for other sections */
-      .list-unstyled li {
-        margin-bottom: 10px;
-      }
-      .project-item {
-        margin-bottom: 20px;
-      }
+    body.light-mode {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .navbar {
+      padding: 10px 20px;
+    }
+
+    .theme-toggle-container {
+      display: flex;
+      gap: 10px;
+    }
+
+    /* Custom styling for the toggle buttons */
+    .btn-theme {
+      border-radius: 20px;
+      padding: 5px 15px;
+    }
+
+    a {
+      color: #17a2b8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #0dcaf0;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info i {
+      margin-right: 8px;
+    }
+
+    /* Improved Education Timeline Styles */
+    .timeline {
+      position: relative;
+      margin: 2rem 0;
+    }
+
+    /* Each timeline item as a flex container */
+    .timeline-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+      /* More compact spacing */
+    }
+
+    .timeline-icon {
+      width: 40px;
+      height: 40px;
+      background: #1e1e1e;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      color: #fff;
+      flex-shrink: 0;
+      margin-right: 1rem;
+    }
+
+    .timeline-content h5 {
+      margin-top: 0;
+      margin-bottom: 0.25rem;
+    }
+
+    .timeline-date {
+      font-size: 0.85rem;
+      color: #aaa;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .timeline-content p {
+      margin: 0;
+    }
+
+    /* List styles for other sections */
+    .list-unstyled li {
+      margin-bottom: 10px;
+    }
+
+    .project-item {
+      margin-bottom: 20px;
+    }
